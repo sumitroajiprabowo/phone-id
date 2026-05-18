@@ -5,6 +5,13 @@ Semua perubahan penting pada project ini didokumentasikan di file ini.
 Format berdasarkan [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 dan project ini mengikuti [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-05-19
+
+### Fixed
+
+- Corrected XLSMART prefix count in comments (18 → 20)
+- Restored missing JSDoc for `applyFormat` internal function
+
 ## [1.0.0] - 2026-05-19
 
 ### Added
