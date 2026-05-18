@@ -1,0 +1,130 @@
+{
+  "name": "phone-id",
+  "version": "1.0.0",
+  "description": "Parser, validator, formatter, dan generator nomor telepon Indonesia — TypeScript, zero dependencies",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./validate": {
+      "import": {
+        "types": "./dist/validate.d.ts",
+        "default": "./dist/validate.js"
+      },
+      "require": {
+        "types": "./dist/validate.d.cts",
+        "default": "./dist/validate.cjs"
+      }
+    },
+    "./parse": {
+      "import": {
+        "types": "./dist/parse.d.ts",
+        "default": "./dist/parse.js"
+      },
+      "require": {
+        "types": "./dist/parse.d.cts",
+        "default": "./dist/parse.cjs"
+      }
+    },
+    "./format": {
+      "import": {
+        "types": "./dist/format.d.ts",
+        "default": "./dist/format.js"
+      },
+      "require": {
+        "types": "./dist/format.d.cts",
+        "default": "./dist/format.cjs"
+      }
+    },
+    "./generate": {
+      "import": {
+        "types": "./dist/generate.d.ts",
+        "default": "./dist/generate.js"
+      },
+      "require": {
+        "types": "./dist/generate.d.cts",
+        "default": "./dist/generate.cjs"
+      }
+    },
+    "./operators": {
+      "import": {
+        "types": "./dist/operators.d.ts",
+        "default": "./dist/operators.js"
+      },
+      "require": {
+        "types": "./dist/operators.d.cts",
+        "default": "./dist/operators.cjs"
+      }
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types.d.ts"
+      },
+      "require": {
+        "types": "./dist/types.d.cts"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome check src/ tests/",
+    "lint:fix": "biome check --write src/ tests/",
+    "format": "biome format --write src/ tests/",
+    "format:check": "biome format src/ tests/",
+    "typecheck": "tsc --noEmit",
+    "audit": "npm audit --audit-level=moderate",
+    "prepublishOnly": "npm run typecheck && npm run lint && npm run test:coverage && npm run build"
+  },
+  "keywords": [
+    "phone",
+    "telepon",
+    "indonesia",
+    "validator",
+    "parser",
+    "formatter",
+    "generator",
+    "nomor-hp",
+    "e164",
+    "operator",
+    "telkomsel",
+    "indosat",
+    "xlsmart"
+  ],
+  "author": "Sumitro Aji Prabowo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitroajiprabowo/phone-id.git"
+  },
+  "homepage": "https://github.com/sumitroajiprabowo/phone-id#readme",
+  "bugs": {
+    "url": "https://github.com/sumitroajiprabowo/phone-id/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@vitest/coverage-v8": "^4.1.6",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}
