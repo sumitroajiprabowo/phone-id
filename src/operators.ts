@@ -8,7 +8,7 @@
  * Active MNOs in Indonesia:
  * - **Telkomsel** — 9 prefixes
  * - **Indosat Ooredoo Hutchison** — 12 prefixes (post Indosat-Tri merger Jan 2022)
- * - **XLSMART** — 18 prefixes (post XL Axiata-Smartfren merger Apr 2025)
+ * - **XLSMART** — 20 prefixes (post XL Axiata-Smartfren merger Apr 2025)
  * - **PSN (Pasifik Satelit Nusantara)** — 1 satellite prefix
  *
  * @module operators
@@ -50,7 +50,7 @@ export const OPERATOR_MAP: ReadonlyMap<string, Operator> = new Map<string, Opera
 	["0898", { name: "Indosat Ooredoo Hutchison", brand: "Indosat", type: "mobile" }],
 	["0899", { name: "Indosat Ooredoo Hutchison", brand: "Indosat", type: "mobile" }],
 
-	// ── XLSMART (18 prefixes) ───────────────────────────────────────────
+	// ── XLSMART (20 prefixes) ───────────────────────────────────────────
 	["0817", { name: "XLSMART", brand: "XLSMART", type: "mobile" }],
 	["0818", { name: "XLSMART", brand: "XLSMART", type: "mobile" }],
 	["0819", { name: "XLSMART", brand: "XLSMART", type: "mobile" }],
