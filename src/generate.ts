@@ -46,6 +46,10 @@ function randomInt(min: number, max: number): number {
 function pickRandom(arr: string[]): string {
 	return arr[randomInt(0, arr.length - 1)] as string;
 }
+
+/**
+ * Format a domestic phone number into the requested output format.
+ */
 function applyFormat(domestic: string, format: PhoneFormat): string {
 	const nsn = domestic.slice(1);
 	switch (format) {
