@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/phone-id.svg)](https://www.npmjs.com/package/phone-id)
 [![CI](https://github.com/sumitroajiprabowo/phone-id/actions/workflows/ci.yml/badge.svg)](https://github.com/sumitroajiprabowo/phone-id/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![codecov](https://codecov.io/gh/sumitroajiprabowo/phone-id/graph/badge.svg?token=PLACEHOLDER)](https://codecov.io/gh/sumitroajiprabowo/phone-id)
+[![codecov](https://codecov.io/gh/sumitroajiprabowo/phone-id/graph/badge.svg?token=aedcc2cb-5c46-4d4a-9559-1815720f32bc)](https://codecov.io/gh/sumitroajiprabowo/phone-id)
 
 Parser, validator, formatter, dan generator **nomor telepon Indonesia**.
 
